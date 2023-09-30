@@ -9,7 +9,7 @@ version = '1.0-SNAPSHOT'
 
 sonarqube {
     properties {
-        property 'sonar.projectKey', 'bhos-qa_l3-sonarcloud-HuseynAghazada'
+        property "sonar.projectKey", "bhos-qa_l4-branch-coverage-HuseynAghazada"
         property 'sonar.organization', 'bhos-qa'
         property 'sonar.host.url', 'https://sonarcloud.io'
     }
