@@ -1,5 +1,8 @@
 package org.example;
 
+import java.io.File;
+import java.io.IOException;
+
 public class WebFrontGenerator {
     public int add(int a, int b) {
         return a + b;
@@ -59,7 +62,11 @@ public class WebFrontGenerator {
         return "<div>" + userInput + "</div>";
     }
 
-    public double calculateCircleArea(double radius) {
+    public double calculateCircleArea(double radius) throws IOException {
+        File tempDir;
+        tempDir = File.createTempFile("log_area", ".");
+        tempDir.delete();
+        tempDir.mkdir();
         return Math.PI * radius * radius;
     }
 }
